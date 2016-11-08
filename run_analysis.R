@@ -114,4 +114,4 @@ setkey(dt2, subject, activity, featDomain, featAcceleration, featInstrument, fea
 dtTidy <- dt2[, list(count = .N, average = mean(value)), by=key(dt2)] #summarizing
 
 #Exporting Data
-write.table(dt2, "C:/Users/farsyed/Documents/R/Working Dir/Extracts/TidyData.txt", sep="\t")
+write.table(dt2, "C:/Users/farsyed/Documents/R/Working Dir/Extracts/TidyData.txt", sep="\t", row.names=FALSE)
